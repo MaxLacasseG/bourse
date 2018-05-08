@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prix en temps réel d'actions en bourse</title>
+  <link rel="stylesheet" href="ressources/css/bourse.css">
+</head>
+<body>
+  <div class="conteneur">
+    <a href="index.html"><h1>Mon portfolio d'actions</h1></a>
+    <form action="javascript: void(0)" autocomplete="off">
+      <input class="sigle-compagnie" type="text" name="sigle" placeholder="Saisissez un ou plusieurs sigles de compagnies ..." autofocus>
+    </form>
+    <ul class="liste-sigles">
+      <li class="titre">
+        <span class="sigle">Sigle</span>
+        <span class="bourse">Bourse</span>
+        <span class="btn-maj"></span>
+        <span class="prix">Prix</span>
+        <span class="temps">Date et temps</span>
+      </li>
+      <!-- 
+        Utilisez l'élément LI suivant comme gabarit pour l'affichage
+        des compagnies et du prix de l'action (dans votre code JavaScript).
+      -->
+      <li class="info-compagnie gabarit" data-id="NASDAQ:AAPL">
+        <span class="sigle">AAPL</span>
+        <span class="bourse">NASDAQ</span>
+        <span class="btn-maj"></span>
+        <span class="prix">143.87</span>
+        <span class="temps">2017-04-07T11:31:54Z</span>
+      </li>
+    </ul>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="ressources/js/bourse.js"></script>
+</body>
+</html>
